@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ApplianceCare | Expert Appliance Repair Delhi</title>
+<meta name="description" content="ApplianceCare provides professional home appliance repair across Delhi. Book washing machine, refrigerator, microwave, AC, TV and small appliance service.">
+<style>
+:root{
+  --navy:#061522; --navy2:#0b2235; --blue:#08a9ff; --blue2:#0077ff;
+  --ink:#10283c; --muted:#63788b; --white:#fff; --line:#dce9f2;
+  --bg:#f6fafc; --card:#ffffff; --shadow:0 18px 50px rgba(4,25,42,.10);
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+button,input,select{font:inherit}
+a{text-decoration:none;color:inherit}
+.header{position:sticky;top:0;z-index:20;background:rgba(6,21,34,.96);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.09)}
+.nav{max-width:1180px;margin:auto;padding:15px 20px;display:flex;align-items:center;gap:28px}
+.logo{font-size:24px;font-weight:900;letter-spacing:-.7px}.logo span{color:var(--blue)}
+.tag{font-size:9px;letter-spacing:1.3px;color:#a9bac7;margin-top:-2px}
+.brand{display:flex;gap:10px;align-items:center}.gear{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,var(--blue),#2d65ff);display:grid;place-items:center;font-size:22px}
+.navlinks{margin-left:auto;display:flex;gap:24px;font-size:14px;color:#dbe8ef}.navlinks a:hover{color:var(--blue)}
+.call{background:linear-gradient(135deg,var(--blue),#0877ff);padding:12px 18px;border-radius:999px;font-weight:800;font-size:13px;white-space:nowrap}
+.hero{background:radial-gradient(circle at 75% 35%,#183c57 0,#071825 45%,#04111b 100%);color:#fff;overflow:hidden}
+.hero-inner{max-width:1180px;margin:auto;min-height:510px;padding:62px 20px;display:grid;grid-template-columns:1fr 1.08fr;align-items:center;gap:30px}
+.eyebrow{letter-spacing:3px;color:#67caff;font-size:12px;font-weight:800}.hero h1{font-size:58px;line-height:.98;margin:15px 0 18px;letter-spacing:-2.7px}.hero h1 span{color:var(--blue)}
+.hero p{font-size:18px;color:#c5d6e0;max-width:560px}.pills{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}.pill{border:1px solid rgba(8,169,255,.35);padding:9px 13px;border-radius:999px;background:rgba(255,255,255,.05);font-size:12px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.primary,.secondary{border:0;border-radius:14px;padding:15px 20px;font-weight:900;cursor:pointer}.primary{background:linear-gradient(135deg,var(--blue),#176dff);color:#fff;box-shadow:0 12px 30px rgba(8,169,255,.25)}.secondary{background:#fff;color:var(--ink)}
+.hero-art{height:390px;border-radius:32px;position:relative;background:linear-gradient(145deg,#102d42,#061521);border:1px solid rgba(255,255,255,.12);box-shadow:0 30px 70px rgba(0,0,0,.35);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-art:before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:radial-gradient(circle,#1e78a5 0,rgba(8,169,255,.18) 35%,transparent 70%);filter:blur(4px)}
+.machine{position:relative;width:235px;height:265px;border-radius:28px;background:linear-gradient(145deg,#f4f8fb,#aebbc4);box-shadow:inset 0 0 0 6px #d5dfe5,0 28px 45px rgba(0,0,0,.35);padding:25px}
+.machine:before{content:"";display:block;height:23px;border-radius:7px;background:#182a37;margin-bottom:18px}.door{width:145px;height:145px;border-radius:50%;background:radial-gradient(circle at 55% 40%,#4c6574 0 20%,#0c1e2a 21% 45%,#c3d0d7 46% 52%,#10222e 53% 100%);margin:auto;border:5px solid #6f7f88}
+.tech{position:absolute;bottom:25px;right:35px;width:100px;height:115px;background:linear-gradient(160deg,#0b6ea5,#06304c);border-radius:45px 45px 18px 18px;transform:rotate(-9deg);opacity:.9}
+.section{max-width:1180px;margin:auto;padding:60px 20px}.section-title{text-align:center;font-size:36px;margin:0 0 8px;letter-spacing:-1.2px}.section-sub{text-align:center;color:var(--muted);margin:0 0 34px}
+.appliances{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.appliance{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px 10px;text-align:center;cursor:pointer;transition:.22s;box-shadow:0 8px 24px rgba(5,30,50,.04)}.appliance:hover{transform:translateY(-6px);border-color:#8fd9ff;box-shadow:var(--shadow)}.ap-icon{height:78px;display:grid;place-items:center;font-size:50px}.appliance b{font-size:13px;display:block}.appliance small{color:var(--muted)}
+.brands{background:var(--navy2);color:#fff;border-radius:28px;padding:30px;margin-top:24px}.brand-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.brand-chip{background:#fff;color:#183043;border-radius:12px;padding:14px 8px;text-align:center;font-weight:900;font-size:13px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:25px}.feature{border-radius:28px;padding:32px;background:linear-gradient(145deg,#071b2a,#103650);color:#fff;min-height:280px}.feature.light{background:#fff;color:var(--ink);border:1px solid var(--line)}.feature h3{font-size:30px;margin:0 0 10px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}.check{font-size:14px;color:#d8e7ef}.check span{color:#55c8ff;margin-right:7px}
+.booking{display:none;min-height:calc(100vh - 72px);padding:42px 20px;background:linear-gradient(180deg,#eef7fb,#f8fbfd)}
+.booking.active{display:block}.home.hidden{display:none}.booking-wrap{max-width:1050px;margin:auto}.back{border:0;background:none;color:#086fa8;font-weight:800;cursor:pointer;margin-bottom:18px}.booking-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:24px}.booking-head h2{font-size:40px;margin:0}.booking-head p{color:var(--muted)}
+.steps{display:grid;gap:18px}.step{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 8px 28px rgba(5,30,50,.05)}.step-top{display:flex;gap:12px;align-items:center;margin-bottom:17px}.num{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--blue),#176dff);color:#fff;display:grid;place-items:center;font-weight:900}.step h3{margin:0;font-size:19px}.step p{margin:3px 0 0;color:var(--muted);font-size:13px}
+.options{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.option{border:1px solid var(--line);background:#fbfdfe;border-radius:15px;padding:13px;cursor:pointer;text-align:left;transition:.18s}.option:hover,.option.selected{border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,169,255,.10);background:#f2fbff}.option strong{display:block;font-size:14px}.option small{color:var(--muted);font-size:11px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.input{width:100%;border:1px solid #cddde7;border-radius:13px;padding:14px 15px;outline:none;background:#fff}.input:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,169,255,.1)}
+.bookbar{margin-top:18px;background:var(--navy);color:#fff;border-radius:22px;padding:20px;display:flex;align-items:center;gap:15px;justify-content:space-between}.bookbar .primary{min-width:210px}.summary{color:#bcd0dc;font-size:13px}.footer{background:#04121e;color:#fff;padding:38px 20px}.footer-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:25px}.footer h4{margin:0 0 12px}.footer p{color:#aebfca;font-size:13px;line-height:1.7}.copyright{max-width:1180px;margin:25px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);color:#8498a6;font-size:12px}
+.toast{position:fixed;right:20px;bottom:20px;background:#071b2a;color:#fff;padding:14px 18px;border-radius:14px;box-shadow:var(--shadow);display:none;z-index:50}.toast.show{display:block}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero h1{font-size:48px}.appliances{grid-template-columns:repeat(3,1fr)}.brand-grid{grid-template-columns:repeat(3,1fr)}.options{grid-template-columns:repeat(2,1fr)}.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.nav{padding:12px 14px}.navlinks{display:none}.call{margin-left:auto;font-size:11px;padding:10px}.hero-inner{padding:44px 18px}.hero h1{font-size:40px}.hero-art{height:300px}.section{padding:42px 14px}.section-title{font-size:29px}.appliances{grid-template-columns:repeat(2,1fr)}.brand-grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.booking-head{display:block}.booking-head h2{font-size:30px}.options{grid-template-columns:1fr 1fr}.form-row{grid-template-columns:1fr}.bookbar{display:block}.bookbar .primary{width:100%;margin-top:14px}.footer-inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="header">
+  <nav class="nav">
+    <a class="brand" href="#" onclick="showHome()">
+      <div class="gear">⚙</div><div><div class="logo">Appliance<span>Care</span></div><div class="tag">EXPERT REPAIR | EVERY BRAND | YOUR HOME</div></div>
+    </a>
+    <div class="navlinks"><a href="#services">Services</a><a href="#brands">Brands</a><a href="#why">Why Us</a><a href="#contact">Contact</a></div>
+    <a class="call" href="tel:+919990125840">☎ 9990125840, 8527936113</a>
+  </nav>
+</header>
+
+<main id="home" class="home">
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">PROFESSIONAL • TRUSTED • DELHI</div>
+      <h1>Home Appliance<br><span>Repair Service</span></h1>
+      <p>Your Comfort, Our Responsibility — reliable repair and service for your essential home appliances.</p>
+      <div class="pills"><div class="pill">✓ Skilled Technicians</div><div class="pill">✓ Quick Service</div><div class="pill">✓ Genuine Spare Parts</div><div class="pill">✓ All Brands</div></div>
+      <div class="hero-actions"><button class="primary" onclick="openBooking('Washing Machine')">Book a Service</button><a class="secondary" href="tel:+919990125840">Call Now</a></div>
+    </div>
+    <div class="hero-art"><div class="machine"><div class="door"></div></div><div class="tech"></div></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <h2 class="section-title">Our Services</h2><p class="section-sub">Complete repair & service for your home appliances</p>
+  <div class="appliances">
+    <div class="appliance" onclick="openBooking('Washing Machine')"><div class="ap-icon">🧺</div><b>Washing Machine</b><small>Repair & Service</small></div>
+    <div class="appliance" onclick="openBooking('Refrigerator')"><div class="ap-icon">🧊</div><b>Refrigerator</b><small>Repair & Service</small></div>
+    <div class="appliance" onclick="openBooking('Microwave Oven')"><div class="ap-icon">♨️</div><b>Microwave Oven</b><small>Repair & Service</small></div>
+    <div class="appliance" onclick="openBooking('AC')"><div class="ap-icon">❄️</div><b>AC</b><small>Repair & Service</small></div>
+    <div class="appliance" onclick="openBooking('LED / LCD TV')"><div class="ap-icon">📺</div><b>LED / LCD TV</b><small>Repair & Service</small></div>
+    <div class="appliance" onclick="openBooking('Small Appliances')"><div class="ap-icon">🔌</div><b>Small Appliances</b><small>Repair & Service</small></div>
+  </div>
+
+  <div class="brands" id="brands"><h2 style="margin:0 0 6px;text-align:center">All Major Brands We Service</h2><p style="text-align:center;color:#a9bfcc;margin:0 0 20px">Original Parts • Genuine Service • All Brands</p><div class="brand-grid">
+    <div class="brand-chip">SAMSUNG</div><div class="brand-chip">LG</div><div class="brand-chip">WHIRLPOOL</div><div class="brand-chip">IFB</div><div class="brand-chip">HAIER</div><div class="brand-chip">PANASONIC</div><div class="brand-chip">HITACHI</div><div class="brand-chip">BOSCH</div><div class="brand-chip">GODREJ</div><div class="brand-chip">VOLTAS</div><div class="brand-chip">ELECTROLUX</div><div class="brand-chip">AND MORE</div>
+  </div></div>
+
+  <div class="feature-grid" id="why">
+    <div class="feature"><div class="eyebrow">SPECIALIST IN</div><h3>Front Load Washing Machine<br><span style="color:#45c6ff">Repair & Service</span></h3><div class="checks"><div class="check"><span>✓</span>Drum Not Spinning</div><div class="check"><span>✓</span>Water Leakage</div><div class="check"><span>✓</span>Noise / Vibration</div><div class="check"><span>✓</span>Not Starting</div></div></div>
+    <div class="feature light"><h3>Why Choose Us?</h3><p style="color:var(--muted)">Professional service focused on genuine work and customer satisfaction.</p><div class="checks"><div class="check" style="color:var(--ink)"><span>✓</span>Experienced Technicians</div><div class="check" style="color:var(--ink)"><span>✓</span>Fast Service</div><div class="check" style="color:var(--ink)"><span>✓</span>Genuine Spare Parts</div><div class="check" style="color:var(--ink)"><span>✓</span>All Delhi Coverage</div><div class="check" style="color:var(--ink)"><span>✓</span>Affordable Pricing</div><div class="check" style="color:var(--ink)"><span>✓</span>Customer Support</div></div></div>
+  </div>
+</section>
+</main>
+
+<section id="booking" class="booking">
+<div class="booking-wrap">
+  <button class="back" onclick="showHome()">← Back to Services</button>
+  <div class="booking-head"><div><div class="eyebrow">FAST • RELIABLE • PROFESSIONAL</div><h2 id="bookingTitle">Washing Machine Repair</h2><p>Select your details and book your service in a few easy steps.</p></div><div style="color:#1673a7;font-weight:800">● Professional Support<br><span style="font-size:12px;color:#718797">Across Delhi</span></div></div>
+
+  <div class="steps">
+    <div class="step"><div class="step-top"><div class="num">1</div><div><h3>Select Brand</h3><p>Choose your appliance brand</p></div></div><div class="options" id="brandOptions"></div></div>
+    <div class="step"><div class="step-top"><div class="num">2</div><div><h3>Select Type / Model</h3><p id="typeHint">Choose the type that matches your appliance</p></div></div><div class="options" id="typeOptions"></div></div>
+    <div class="step"><div class="step-top"><div class="num">3</div><div><h3>Select Problem</h3><p>Tell us what issue you are facing</p></div></div><div class="options" id="problemOptions"></div></div>
+    <div class="step"><div class="step-top"><div class="num">4</div><div><h3>Your Contact Details</h3><p>Enter your mobile number for service booking</p></div></div><div class="form-row"><input id="name" class="input" placeholder="Customer Name"><input id="mobile" class="input" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit mobile number"></div>
+<div style="margin-top:12px"><input id="address" class="input" placeholder="Service Address (House No., Street, Area, Delhi)"></div></div>
+  </div>
+  <div class="bookbar"><div class="summary" id="summary">Select brand, type and problem to continue.</div><button class="primary" onclick="bookService()">Book Service Now →</button></div>
+</div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div><div class="logo">Appliance<span>Care</span></div><p>Expert Repair | Every Brand | Your Home</p></div>
+    <div><h4>Call / WhatsApp</h4><p><a href="tel:+919990125840">9990125840</a><br><a href="tel:+918527936113">8527936113</a></p></div>
+    <div><h4>Office Address</h4><p>Wz-648, Palam Village<br>New Delhi - 110045</p></div>
+  </div>
+  <div class="copyright">© 2026 ApplianceCare. All Rights Reserved. • Serving Delhi</div>
+</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+const data = {
+  "Washing Machine": {
+    types:[["Front Load","Premium cleaning & energy efficient"],["Top Load","Fast & convenient washing"],["Semi Automatic","Budget friendly & reliable"]],
+    problems:["Not Starting","Water Leakage","Not Draining","Noise / Vibration","Not Spinning","Error Code","Door Not Opening","Other Issues"]
+  },
+  "Refrigerator": {
+    types:[["Single Door","Compact refrigerator"],["Double Door","Family refrigerator"],["Side-by-Side","Large capacity"],["Inverter","Energy efficient"]],
+    problems:["Not Cooling","Water Leakage","Ice Build-Up","Compressor Issue","Strange Noise","Not Starting","Gas / Cooling Issue","Other Issues"]
+  },
+  "Microwave Oven": {
+    types:[["Solo","Basic heating"],["Grill","Heating & grilling"],["Convection","Baking & cooking"]],
+    problems:["Not Heating","Not Starting","Sparking","Turntable Not Working","Buttons Not Working","Door Problem","Unusual Noise","Other Issues"]
+  },
+  "AC": {
+    types:[["Split AC","Home split system"],["Window AC","Window-mounted unit"],["Inverter AC","Energy efficient inverter"]],
+    problems:["Not Cooling","Water Leakage","Not Starting","Gas / Cooling Issue","Strange Noise","Remote Problem","Outdoor Unit Issue","Other Issues"]
+  },
+  "LED / LCD TV": {
+    types:[["LED TV","LED display"],["LCD TV","LCD display"],["Smart TV","Smart connected TV"],["Android TV","Android platform"]],
+    problems:["No Display","No Sound","Not Starting","Screen Lines","Remote Problem","HDMI / Port Issue","Power Problem","Other Issues"]
+  },
+  "Small Appliances": {
+    types:[["Mixer / Grinder","Kitchen appliance"],["Iron","Clothes iron"],["Water Purifier","RO / purifier"],["Other","Other small appliance"]],
+    problems:["Not Starting","Power Problem","Heating Issue","Noise Problem","Water Leakage","Switch / Button Issue","Performance Issue","Other Issues"]
+  }
+};
+const brands=["Samsung","LG","Whirlpool","IFB","Haier","Panasonic","Hitachi","Bosch","Godrej","Voltas","Electrolux","Others"];
+let state={appliance:"Washing Machine",brand:"",type:"",problem:""};
+
+function openBooking(appliance){
+  state={appliance,brand:"",type:"",problem:""};
+  document.getElementById("home").classList.add("hidden");
+  document.getElementById("booking").classList.add("active");
+  document.getElementById("bookingTitle").textContent=appliance+" Repair & Service";
+  renderOptions(); updateSummary();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function showHome(){
+  document.getElementById("booking").classList.remove("active");
+  document.getElementById("home").classList.remove("hidden");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function makeOption(label,sub,group,key){
+  const b=document.createElement("button"); b.type="button"; b.className="option"+(state[key]===label?" selected":"");
+  b.innerHTML="<strong>"+label+"</strong>"+(sub?"<small>"+sub+"</small>":"");
+  b.onclick=()=>{state[key]=label;renderOptions();updateSummary()};
+  return b;
+}
+function renderOptions(){
+  const bo=document.getElementById("brandOptions"); bo.innerHTML="";
+  brands.forEach(x=>bo.appendChild(makeOption(x,"", "brand","brand")));
+  const to=document.getElementById("typeOptions"); to.innerHTML="";
+  data[state.appliance].types.forEach(x=>to.appendChild(makeOption(x[0],x[1],"type","type")));
+  const po=document.getElementById("problemOptions"); po.innerHTML="";
+  data[state.appliance].problems.forEach(x=>po.appendChild(makeOption(x,"", "problem","problem")));
+  document.getElementById("typeHint").textContent=state.appliance==="Washing Machine"?"Choose Front Load, Top Load or Semi Automatic":"Choose the type / model of your appliance";
+}
+function updateSummary(){
+  const s=document.getElementById("summary");
+  if(state.brand&&state.type&&state.problem) s.textContent=`${state.appliance} • ${state.brand} • ${state.type} • ${state.problem}`;
+  else s.textContent="Select brand, type and problem to continue.";
+}
+function bookService(){
+  const mobile=document.getElementById("mobile").value.replace(/\D/g,"");
+  const name=document.getElementById("name").value.trim();
+  const address=document.getElementById("address").value.trim();
+  if(!state.brand||!state.type||!state.problem){toast("Please select brand, type and problem.");return}
+  if(!name){toast("Please enter customer name.");return}
+  if(mobile.length!==10){toast("Please enter a valid 10-digit mobile number.");return}
+  if(!address){toast("Please enter service address.");return}
+  const msg=`Hello ApplianceCare, I want to book a service.%0A%0AName: ${encodeURIComponent(name)}%0AMobile: ${mobile}%0AService Address: ${encodeURIComponent(address)}%0AAppliance: ${encodeURIComponent(state.appliance)}%0ABrand: ${encodeURIComponent(state.brand)}%0AType/Model: ${encodeURIComponent(state.type)}%0AProblem: ${encodeURIComponent(state.problem)}%0A%0AOffice: Wz-648, Palam Village, New Delhi - 110045`;
+  toast("Opening WhatsApp with your booking details…");
+  setTimeout(()=>window.open("https://wa.me/919990125840?text="+msg,"_blank"),500);
+}
+function toast(t){const x=document.getElementById("toast");x.textContent=t;x.classList.add("show");setTimeout(()=>x.classList.remove("show"),2800)}
+renderOptions();
+</script>
+</body>
+</html>
